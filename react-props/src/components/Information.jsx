@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from "prop-types";
 export function Information(props) {
   return (
     <div id="information">
@@ -17,3 +17,9 @@ export function Information(props) {
     </div>
   );
 }
+
+Information.propTypes = {
+  age: PropTypes.number.isRequired,
+  isMarried: PropTypes.bool.isRequired,
+  username: PropTypes.string.isRequired,
+};

@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import { PropTypes } from "prop-types";
 import { Information } from "./Information";
 
 export default function UserProfile(props) {
@@ -12,3 +12,8 @@ export default function UserProfile(props) {
     </div>
   );
 }
+
+UserProfile.propTypes = {
+  age: PropTypes.number.isRequired,
+  isMarried: PropTypes.bool.isRequired,
+};
