@@ -1,0 +1,13 @@
+function showWithTurple(input: [String, number]) {
+    for(let i = 0; i < input[1]; i ++) {
+        console.log(input[0])
+    }
+}
+
+const arg1:[String, number] = ["TypeScript Turple", 3]
+
+arg1.pop()
+
+arg1.push(1)
+
+showWithTurple(arg1);
